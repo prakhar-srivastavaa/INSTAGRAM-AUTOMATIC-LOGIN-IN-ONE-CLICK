@@ -21,14 +21,14 @@ driver = webdriver.Chrome(chromedr)
 driver.get("https://instagram.com/")
 time.sleep(2)
 
-########## INSTPECT THE USERNAME BLANK SPACE COPY SELECTOR AND PASTE  ##########
+########## INSPECT THE USERNAME BLANK SPACE COPY SELECTOR AND PASTE  ##########
 
 username = driver.find_element_by_css_selector("#loginForm > div > div:nth-child(1) > div > label > input")
 username.clear()
 username.send_keys("ENTER USERNAME HERE")
 time.sleep(1)
 
-########## INSTPECT THE PASSWORD BLANK SPACE COPY SELECTOR AND PASTE  ##########
+########## INSPECT THE PASSWORD BLANK SPACE COPY SELECTOR AND PASTE  ##########
 
 username.send_keys(Keys.TAB)
 psw = driver.find_element_by_css_selector("#loginForm > div > div:nth-child(2) > div > label > input")
@@ -37,13 +37,13 @@ psw.send_keys("ENTER PASSWORD HERE")
 psw.send_keys(Keys.RETURN)
 time.sleep(3)
 
-########## INSTPECT THE NOTNOW BUTTON COPY SELECTOR AND PASTE  ##########
+########## INSPECT THE NOTNOW BUTTON COPY SELECTOR AND PASTE  ##########
 
 not_now1= driver.find_element_by_css_selector("#react-root > section > main > div > div > div > div > button")
 not_now1.click()
 time.sleep(3)
 
-########## INSTPECT THE NOTNOW BUTTON COPY SELECTOR AND PASTE  ##########
+########## INSPECT THE NOTNOW BUTTON COPY SELECTOR AND PASTE  ##########
 
 not_now2= driver.find_element_by_css_selector("body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm")
 not_now2.click()
